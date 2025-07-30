@@ -19,11 +19,11 @@ Chatpod is an intelligent web app that allows users to upload any audio file, au
 
 ### 🖼️ Upload & Transcription
 
-![Upload UI](./27e022f4-0d2d-4ff5-8425-f09fc9f90831.png)
+![Upload UI](./Screenshots/upload.png)
 
 ### ❓ Question & Answer Interface
 
-![Ask Question](/Screenshots/Screenshot 2025-07-30 133906.png)
+![Ask Question](./Screenshots/ask-question.png)
 
 ---
 
