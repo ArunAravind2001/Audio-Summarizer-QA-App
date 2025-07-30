@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatpod - Transcribe Audio and Ask Questions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Chatpod</div>
+    <nav class="nav">
+      <div class="nav-item">Products ▾</div>
+      <div class="nav-item">About</div>
+      <div class="nav-item">Customers</div>
+      <div class="nav-item">Pricing</div>
+    </nav>
+    <div class="nav-buttons">
+      <button class="sign-in">Sign In</button>
+      <button class="get-started">Get Started ➤</button>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="#" class="breadcrumb-item">🏠</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="#" class="breadcrumb-item">Tools</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Transcribe Audio and Ask Questions</span>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1 class="hero-title">Transcribe Audio and Ask Questions</h1>
+    <p class="hero-subtitle">Transcribe your audio and ask questions about it in no time. Free AI audio-to-text converter with intelligent Q&A.</p>
+
+    <!-- Upload Container -->
+    <div class="upload-container">
+      <form id="upload-form">
+        <h2 class="upload-title">Upload your file</h2>
+        <p class="upload-subtitle">Click Choose File button to get started or drag and drop files to upload.</p>
+        
+        <div class="file-input-wrapper">
+          <input type="file" id="audio-file" accept="audio/*" required />
+          <button type="button" class="choose-file-btn" onclick="document.getElementById('audio-file').click()">
+            Choose File
+          </button>
+        </div>
+        
+        <button type="submit" class="choose-file-btn upload-btn">
+          Upload & Transcribe
+        </button>
+      </form>
+    </div>
+
+    <!-- Question Container -->
+    <div class="question-container">
+      <form id="question-form" class="question-form">
+        <input type="text" id="question" placeholder="Ask about the podcast..." required />
+        <button type="submit" class="ask-btn">Ask Question</button>
+      </form>
+    </div>
+
+    <!-- Transcript -->
+    <div id="transcript" class="content-box"></div>
+
+    <!-- Answer -->
+    <div id="answer" class="content-box"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    By uploading your file, you are agreeing to the Chatpod, Inc. <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
