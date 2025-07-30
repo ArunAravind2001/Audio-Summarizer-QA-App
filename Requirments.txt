@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+transformers
+openai-whisper
+chromadb
+torch
+ollama
